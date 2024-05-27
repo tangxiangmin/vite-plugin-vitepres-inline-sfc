@@ -3,9 +3,34 @@ vite-plugin-vitepres-inline-sfc
 
 ## 说明
 
-在vitepress中，支持单独的markdown文件内编写vue组件块（SFC形式，包括`template`、`script`和`style`)，避免需要从外部文件引入Vue组件。
+在vitepress中，支持在单独的markdown文件内编写vue组件块（SFC形式，包括`template`、`script`和`style`)，避免需要从外部文件引入Vue组件。
 
-[使用文档](https://www.shymean.com/article/在VitePress中实现内联Vue组件)
+
+安装
+```
+// npm
+npm i vite-plugin-vitepres-inline-sfc -D
+// pnpm 
+pnpm i vite-plugin-vitepres-inline-sfc -D
+```
+
+在`.vitepress/config.mts`中作为`vite`插件引入
+
+```js
+import { defineConfig } from 'vitepress'
+import inlineSFC from 'vite-plugin-vitepres-inline-sfc'
+
+export default defineConfig({
+  ... other vitepress config
+  vite: {
+    plugins:[
+      inlineSFC()
+    ]
+  }
+})
+```
+
+该插件扩展了vitepress中markdown的语法，具体语法可以参考[使用文档](https://www.shymean.com/article/在VitePress中实现内联Vue组件)
 
 ## 演示
 
