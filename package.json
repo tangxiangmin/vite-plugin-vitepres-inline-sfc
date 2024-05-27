@@ -25,6 +25,13 @@
     "dist"
   ],
   "author": "shymwan",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tangxiangmin/vite-plugin-vitepres-inline-sfc"
+  },
+  "bugs": {
+    "url": "https://github.com/tangxiangmin/vite-plugin-vitepres-inline-sfc/issues"
+  },
   "license": "MIT",
   "description": "In vitepress, vue component blocks can be written in a separate markdown file, avoiding the need to import Vue components from external files.",
   "devDependencies": {
