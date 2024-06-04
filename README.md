@@ -36,17 +36,17 @@ export default defineConfig({
 
 正常编写一个vue代码块，会使用下面的语法
 ````
-'''vue
+```vue
 <template>
   <button>原始code</button>
 </template>
-'''
+```
 ````
 
 内联Vue组件，是在vue代码块的基础上，通过一个JSON字符串配置`component`字段为true来开启的
 
 ````
-'''vue { "component": true } 
+```vue { "component": true } 
 <script setup lang="ts">
 import { add } from './util'
 const onClick = ()=>{
@@ -63,7 +63,7 @@ button {
     color: red;
 }
 </style>
-'''
+```
 ````
 
 上述的`{ "component": true }`会将vue代码块进行扩展，通过vite插件构建为一个在markdown里面运行的vue SFC组件，不需要引入任何的外部文件！！

@@ -1,10 +1,13 @@
 {
   "name": "vite-plugin-vitepres-inline-sfc",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "dist/index.js",
   "type": "module",
   "scripts": {
-    "build": "tsup"
+    "build": "tsup",
+    "docs:dev": "npm run build && vitepress dev examples",
+    "docs:build": "vitepress build examples",
+    "docs:preview": "vitepress preview examples"
   },
   "keywords": [
     "vue",
@@ -41,7 +44,9 @@
     "eslint": "^9.3.0",
     "eslint-config-shymean": "^2.0.6",
     "tsup": "^8.0.2",
-    "typescript": "^5.4.5"
+    "typescript": "^5.4.5",
+    "vitepress": "^1.2.3",
+    "vitest": "^1.6.0"
   },
   "dependencies": {
     "@mdit-vue/plugin-sfc": "^2.1.3",
