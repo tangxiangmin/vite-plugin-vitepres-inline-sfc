@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsup",
     "test": "vitest ",
-    "docs:dev": "npm run build && vitepress dev examples",
+    "docs:dev": "vitepress dev examples",
     "docs:build": "vitepress build examples",
     "docs:preview": "vitepress preview examples"
   },

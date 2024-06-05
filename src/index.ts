@@ -14,7 +14,7 @@ export default function inlineSFCPlugin() {
     load(id: string) {
       if (virtualSFCModuleMap.has(id)) {
         return {
-          code: virtualSFCModuleMap.get(id),
+          code: virtualSFCModuleMap.get(id) as string,
         }
       }
     },
