@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
-// eslint-disable-next-line antfu/no-import-dist
-import inlineSFC from '../../dist/index.js'
+
+// import inlineSFC from '../../dist/index.js'
+import inlineSFC from '../../src/index.js'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({

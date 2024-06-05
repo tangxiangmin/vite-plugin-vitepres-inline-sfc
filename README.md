@@ -21,7 +21,7 @@ import { defineConfig } from 'vitepress'
 import inlineSFC from 'vite-plugin-vitepres-inline-sfc'
 
 export default defineConfig({
-  ... other vitepress config
+  //... other vitepress config
   vite: {
     plugins:[
       inlineSFC()
@@ -67,3 +67,5 @@ button {
 ````
 
 上述的`{ "component": true }`会将vue代码块进行扩展，通过vite插件构建为一个在markdown里面运行的vue SFC组件，不需要引入任何的外部文件！！
+
+这里有一个[示例文档](./examples/index.md)，可以点击查看原始的markdown代码
